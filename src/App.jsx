@@ -9,25 +9,41 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <h1 id = "name">
+          kelly truong
+        </h1>
+        <p id = "about">
+          im building up a little website about my little journey in JADE + beyond
+        </p>
+
+        <div id = "nav bar"> 
+        <ul>
+          <li>
+            <a href ="/myportfolio/main.jsx">home</a>
+            <a href ="main.jsx">portfolio</a>
+            <a href ="main.jsx">projects</a>
+            <a href ="main.jsx">resume</a>
+          </li>
+        </ul>
+        </div>
+
+        <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+
+        <a href="https://www.linkedin.com/in/kellybtruong/" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+
+        </div>
+
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+       
     </>
   )
 }
