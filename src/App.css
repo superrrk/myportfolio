@@ -1,9 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 11rem;
   text-align: center;
-  background-color: #bdcae8aa;
+  background-color: #6fceb8aa;
 }
 
 .logo {
@@ -34,14 +34,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 @font-face {
   font-family: Abril;
   src: URL(../public/AbrilFatface-Regular.ttf);
@@ -53,14 +45,7 @@
   color: #ffffff;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 50;
-  color: #fff;
-}
-
-li a {
-  display: block;
+img {
+  width: 5%;
+  height: 5%;
 }
