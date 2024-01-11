@@ -4,34 +4,29 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LinkedIn from "./pictures/LinkedIn.jpeg"
 import NavigationBar from './NavigationBar'
+import home from "./pages/home"
+import portfolio from "./pages/portfolio"
+import about from "./pages/about"
+import resume from "./pages/resume"
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='Main'>
-        <h1 id = "name">
-          kelly truong
-        </h1>
-        <p id = "about">
-          im building up a little website about my little journey in JADE + beyond
-        </p>
-
-        <NavigationBar></NavigationBar>
-
-        <div id = "socials">
-          <a href="https://www.linkedin.com/in/kellybtruong/" target="_blank">
-            <img src={LinkedIn} id="LinkedIn" />
-          </a>
-        </div>
-
-        <div className="test">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        </div>
-
+        <HashRouter>
+          <div>
+            <NavigationBar></NavigationBar>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </div>
+        </HashRouter>
 
       </div>
        

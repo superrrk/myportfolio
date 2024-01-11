@@ -6,10 +6,10 @@ function NavigationBar(){
            <nav>
             <div id = "navbar"> 
                 <ul>
-                 <li><a href ="#/main">home</a></li>
+                 <li><a href ="#/home">home</a></li>
                 <li><a href ="#/portfolio">portfolio</a></li>
-                <li><a href ="#/projects">projects</a></li>
-                <li><a href ="#/esumes">resume</a></li>
+                <li><a href ="#/about">about</a></li>
+                <li><a href ="#/resume">resume</a></li>
                 </ul>
             </div>
            </nav>
