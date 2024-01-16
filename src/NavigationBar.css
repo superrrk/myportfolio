@@ -1,34 +1,32 @@
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index:9999;
-
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 50;
-    color: #fff;
-  }
-
-  #navbar li {
-    list-style: none;
-    padding: 0 15px;
-    position: relative;
-  }
-
-  #navbar li a {
-    text-decoration:none;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #fff;
-  }
+  list-style-type: none;
+  display: flex;
+  background-color: #726b80;
+  float: center;
   
+}
+
+#navbar li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 10px 10px 10px;
+  
+}
+
+#navbar li a {
+  text-decoration:none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  
+}
+
+
+
 
 

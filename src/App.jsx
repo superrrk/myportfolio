@@ -2,15 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import LinkedIn from "./pictures/LinkedIn.jpeg"
 import NavigationBar from './NavigationBar'
-import home from "./pages/home"
-import portfolio from "./pages/portfolio"
-import about from "./pages/about"
-import resume from "./pages/resume"
+import Home from "./pages/home"
+import Portfolio from "./pages/portfolio"
+import About from "./pages/about"
+import Resume from "./pages/resume"
 import { Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
+  
   const [count, setCount] = useState(0)
 
   return (
@@ -26,10 +26,7 @@ function App() {
               <Route path="/resume" element={<Resume />} />
             </Routes>
           </div>
-        </HashRouter>
-
-      </div>
-       
+        </HashRouter>     
     </>
   )
 }

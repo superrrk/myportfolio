@@ -1,37 +1,10 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 11rem;
+  padding: 9rem;
   text-align: center;
-  background-color: #6fceb8aa;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  background-color: #ffffff;
+  display: flex;
 }
 
 @font-face {
@@ -39,13 +12,89 @@
   src: URL(../public/AbrilFatface-Regular.ttf);
 
 }
-#name{
+
+#name {
   font-family: Abril;
   font-size: 40px;
-  color: #ffffff;
+  color: rgb(253, 156, 229);
+  
 }
 
 img {
+  width: 300px;
+  height: auto;
+  margin: 30px;
+}
+
+#socials {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  
+}
+
+#socials img {
   width: 5%;
   height: 5%;
+  margin: 20px;
+
+}
+
+p {
+  color: #000000;
+}
+
+h2 {
+  color: #000000; 
+  background-color: #888888;
+  
+}
+
+#about p {
+  font-size: 30px;
+  border: 15px;
+  margin: 15px;
+
+  font-family: Abril;
+  background-color: rgb(168, 168, 168);
+  width: 600px;
+  height: 200px;
+
+}
+
+@media screen and (min-width: 780px) {
+	.full-width-img{ /* this is your id or class name */
+		margin: auto;
+		width:90%;
+  }
+}
+
+h1 {
+  border-bottom-style: solid;
+  border-color: #000000;
+  border-width: 7px;
+  padding: 20px;
+  color: #000;
+  font-size: 30px;
+}
+
+#banner img {
+  width: 1000px;
+  height: auto;
+  float: center;
+}
+
+.Response {
+
+  background-color: #8ec4cd;
+  display: grid;
+  width: 1000px;
+  height: 200px;
+  grid-template-columns: 70px, 250px 70px;
+  grid-gap: 10px;
+  grid-template-rows: 50px 200px 50px;
+  margin: 15px;
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(141, 192, 201);
+  box-shadow: 10px 10px 8px #888888
 }
